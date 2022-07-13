@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <%- include('partials/navbar.ejs') %>
+
+    <h1>Guia perguntas <%= nome %></h1>
+
+    <% if(msg) {%>
+        Aoba
+    <% } %>
+
+    <% produtos.forEach(function(produto){%>
+        <h1><%= produto.nome %></h1>
+        <%= produto.preco %><br>
+    <%})%>
+
+
+</body>
+<%- include('partials/footer.ejs') %>
