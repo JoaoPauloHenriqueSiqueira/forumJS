@@ -16,3 +16,5 @@ Question.sync({force:false}).then(()=>{
     console.log("Migration - table 'question' created!");
 })
 
+
+module.exports = Question;
