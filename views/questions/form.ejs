@@ -1,15 +1,15 @@
-<%- include('partials/header.ejs') %>
+<%- include('../partials/header.ejs') %>
 <body>
-    <%- include('partials/navbar.ejs') %>
+    <%- include('../partials/navbar.ejs') %>
 
     <div class="container">
-
+        <br>
         <div class="card" id="formulario-pergunta">
             <div class="card-header">
                 <h3>Realizar pergunta</h3>
             </div>
             <div class="card-body">
-                <form method="POST" action="saveQuestion">
+                <form method="POST" action="/saveQuestion">
                     <label>Título</label>
                     <input type="text" name="title" placeholder="Título" class="form-control">
                     <br><label>Descrição</label>
@@ -21,4 +21,4 @@
         </div>
     </div>
 </body>
-<%- include('partials/footer.ejs') %>
+<%- include('../partials/footer.ejs') %>
